@@ -1,0 +1,21 @@
+﻿<Window x:Class="GenShadow_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GenShadow_UI"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="650" MinWidth="950">
+    <Grid>
+        <Menu Grid.ColumnSpan="2" VerticalAlignment="Top">
+            <MenuItem Header="Режимы">
+                <MenuItem Header="Тень"/>
+                <MenuItem Header="Свет"/>
+                <MenuItem Header="Текстура"/>
+            </MenuItem>
+            <MenuItem Header="Настройки"/>
+        </Menu>
+
+        <Frame NavigationUIVisibility="Hidden" Source="Pages/ShadowPage.xaml"/>
+    </Grid>
+</Window>
